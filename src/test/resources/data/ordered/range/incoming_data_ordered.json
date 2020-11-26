@@ -1,0 +1,170 @@
+[
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 9
+    },
+    "temperature": 16.9
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 7
+    },
+    "temperature": 17
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 12
+    },
+    "temperature": 17.6
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 6
+    },
+    "temperature": 18
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 11
+    },
+    "temperature": 20.2
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 5
+    },
+    "temperature": 21
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 15
+    },
+    "temperature": 22.1
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 8
+    },
+    "temperature": 23.1
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 24
+    },
+    "temperature": 23.2
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 17
+    },
+    "temperature": 23.3
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 14
+    },
+    "temperature": 23.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 20
+    },
+    "temperature": 23.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 23
+    },
+    "temperature": 23.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 13
+    },
+    "temperature": 24.3
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 21
+    },
+    "temperature": 24.6
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 10
+    },
+    "temperature": 25.1
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 18
+    },
+    "temperature": 25.2
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 22
+    },
+    "temperature": 25.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 7,
+      "day": 25
+    },
+    "temperature": 26.2
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 16
+    },
+    "temperature": 26.5
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 19
+    },
+    "temperature": 29.4
+  }
+]

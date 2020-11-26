@@ -1,0 +1,106 @@
+[
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 21
+    },
+    "temperature": 24.6
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 13
+    },
+    "temperature": 24.3
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 8,
+      "day": 28
+    },
+    "temperature": 24.3
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 1
+    },
+    "temperature": 24
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 14
+    },
+    "temperature": 23.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 20
+    },
+    "temperature": 23.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 23
+    },
+    "temperature": 23.4
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 17
+    },
+    "temperature": 23.3
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 8,
+      "day": 27
+    },
+    "temperature": 23.3
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 24
+    },
+    "temperature": 23.2
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 8
+    },
+    "temperature": 23.1
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 30
+    },
+    "temperature": 22.34
+  },
+  {
+    "date": {
+      "year": 2020,
+      "month": 6,
+      "day": 15
+    },
+    "temperature": 22.1
+  }
+]

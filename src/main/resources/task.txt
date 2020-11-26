@@ -1,0 +1,30 @@
+Test weather service / data
+
+1.      Using API verify if days in given range are in valid temperature days (example: from day 5. to day 25.)
+2.      Valid range is within max 25 degrees and min 21.5 degrees
+3.      Temperature outside of valid range = fail
+4.      Report temperatures in two different files, one for valid temperatures and one for invalid temperatures
+5.      Log test execution steps
+6.      Report on Passed / failed tests, list of days and number of days outside of valid temperature range, average temperature in given range
+7.      Data of max, min temperature with days, temperature ordered data, temperatures days in reverse order (this point is optional)
+
+Deliverables:
+1.      Source code
+2.      Proof of execution
+3.      Instructions how to execute the test
+
+Possible data Sources:
+·         Any open weather service
+·         https://rem-rest-api.herokuapp.com with self populated data
+
+
+
+
+ 1. валидация - разделить на две листы - passed/failed. 21.5-25 - passed
+ 2. создание двух файлов
+ 3. рапорт с passed и failed тестами. список дней и кол-во вне валидного диапазона
+ 4. log config
+
+
+6. Отчет о пройденных / неудачных тестах, список дней и количество дней за пределами допустимого диапазона температур, средняя температура в данном диапазоне.
+7. Данные максимальной и минимальной температуры с указанием дней, заказанные данные о температуре, температура в днях в обратном порядке (этот пункт не является обязательным).
