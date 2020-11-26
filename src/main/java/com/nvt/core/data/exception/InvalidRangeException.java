@@ -1,4 +1,4 @@
-package com.nvt.core.data.excpetion;
+package com.nvt.core.data.exception;
 
 public class InvalidRangeException extends RuntimeException {
 

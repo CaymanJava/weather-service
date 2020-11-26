@@ -1,7 +1,5 @@
 package com.nvt.core.analyzer.service;
 
-import com.nvt.BaseAbstractTest;
-import com.nvt.PathBuilder;
 import com.nvt.core.analyzer.request.DataAnalyzeRequest;
 import com.nvt.core.data.snapshot.DayTemperatureSnapshot;
 import org.junit.Before;
@@ -12,7 +10,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DataAnalyzerServiceTest extends BaseAbstractTest {
+public class DataAnalyzerServiceTest extends DataAnalyzerAbstractTest {
 
     private DataAnalyzer dataAnalyzer;
     private List<DayTemperatureSnapshot> daysTemperature;
@@ -76,31 +74,6 @@ public class DataAnalyzerServiceTest extends BaseAbstractTest {
 
         // then
         assertTrue(dataAnalyzeResponse.isEmpty());
-    }
-
-    private String buildInvalidDaysTemperaturePath() {
-        return PathBuilder.builder()
-                .withOriginal()
-                .withAllData()
-                .invalidDataFile()
-                .build();
-    }
-
-    private String buildValidDaysTemperaturePath() {
-        return PathBuilder
-                .builder()
-                .withOriginal()
-                .withAllData()
-                .validDataFile()
-                .build();
-    }
-
-    private String buildDaysTemperaturePath() {
-        return PathBuilder.builder()
-                .withOriginal()
-                .withAllData()
-                .incomingDataFile()
-                .build();
     }
 
 }

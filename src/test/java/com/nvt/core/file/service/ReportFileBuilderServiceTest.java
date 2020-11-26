@@ -1,21 +1,17 @@
 package com.nvt.core.file.service;
 
-import com.nvt.BaseAbstractTest;
-import com.nvt.PathBuilder;
 import com.nvt.core.data.snapshot.DayTemperatureSnapshot;
-import com.nvt.core.file.request.ReportFilesCreateRequest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
 
-import static com.nvt.core.file.service.FileType.JSON;
 import static java.lang.String.format;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-public class ReportFileBuilderServiceTest extends BaseAbstractTest {
+public class ReportFileBuilderServiceTest extends ReportFileBuilderAbstractTest {
 
     private ReportFileBuilder fileBuilder;
     private List<DayTemperatureSnapshot> validDaysTemperature;
@@ -83,33 +79,6 @@ public class ReportFileBuilderServiceTest extends BaseAbstractTest {
         // then
         assertFalse(reportFilesResponse.isValidDaysFileExist());
         assertFalse(reportFilesResponse.isInvalidDaysFileExist());
-    }
-
-    private String buildValidDaysTemperaturePath() {
-        return PathBuilder.builder()
-                .withOriginal()
-                .withAllData()
-                .validDataFile()
-                .build();
-    }
-
-    private String buildInvalidDaysTemperaturePath() {
-        return PathBuilder.builder()
-                .withOriginal()
-                .withAllData()
-                .invalidDataFile()
-                .build();
-    }
-
-    private ReportFilesCreateRequest buildReportFilesCreateRequest(List<DayTemperatureSnapshot> validDaysTemperature,
-                                                                   List<DayTemperatureSnapshot> invalidDaysTemperature) {
-        return ReportFilesCreateRequest.builder()
-                .validDays(validDaysTemperature)
-                .invalidDays(invalidDaysTemperature)
-                .validDaysDirectory(TMP_DIRECTORY)
-                .invalidDaysDirectory(TMP_DIRECTORY)
-                .fileType(JSON)
-                .build();
     }
 
 }

@@ -1,13 +1,10 @@
 package com.nvt.core.data.service;
 
-import com.nvt.BaseAbstractTest;
-import com.nvt.PathBuilder;
-import com.nvt.core.data.excpetion.InvalidRangeException;
+import com.nvt.core.data.exception.InvalidRangeException;
 import com.nvt.core.data.request.DayTemperatureFindRequest;
 import com.nvt.core.data.snapshot.DayTemperatureSnapshot;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.function.Executable;
 
 import java.util.List;
 
@@ -15,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class WeatherDataProviderTest extends BaseAbstractTest {
+public class WeatherDataProviderTest extends WeatherDataProviderAbstractTest {
 
     private WeatherDataProvider dataProvider;
     private List<DayTemperatureSnapshot> daysTemperature;
@@ -107,7 +104,7 @@ public class WeatherDataProviderTest extends BaseAbstractTest {
         var findRequest = new DayTemperatureFindRequest(-1, 2);
 
         // when
-        var gettingRangeFunction = getTemperatureRange(findRequest);
+        var gettingRangeFunction = getTemperatureRange(dataProvider, findRequest);
 
         // then
         assertThrows(InvalidRangeException.class, gettingRangeFunction, "Invalid range! Incoming parameters should be greater than zero. From day: -1, to day: 2");
@@ -119,22 +116,10 @@ public class WeatherDataProviderTest extends BaseAbstractTest {
         var findRequest = new DayTemperatureFindRequest(7, 2);
 
         // when
-        var gettingRangeFunction = getTemperatureRange(findRequest);
+        var gettingRangeFunction = getTemperatureRange(dataProvider, findRequest);
 
         // then
         assertThrows(InvalidRangeException.class, gettingRangeFunction, "Invalid range! Incoming parameters should be greater than zero. From day: -1, to day: 2");
-    }
-
-    private String buildDaysTemperaturePath() {
-        return PathBuilder.builder()
-                .withOriginal()
-                .withAllData()
-                .incomingDataFile()
-                .build();
-    }
-
-    private Executable getTemperatureRange(DayTemperatureFindRequest request) {
-        return () -> dataProvider.getTemperature(request);
     }
 
 }
